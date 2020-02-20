@@ -1,0 +1,465 @@
+$white: #FFFFFF;
+$grey: #F5F8FB;
+$black: #151B26;
+$green: #21C87A;
+$purple: #796EFF;
+
+$primary-font: Roboto;
+
+
+$mobile-space: 10px;
+$desktop-space: 35px;
+
+
+$margin: 0px, 20px, 0px, 20px;
+
+
+$radius: 4px;
+
+
+
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin overlay() {
+  width: 100%;
+  max-width: 100%;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  margin: $margin;
+}
+
+@mixin form(){
+  position: relative;
+  background-color: $white;
+  font-family: $primary-font;
+  max-width: 430px;
+  height: 400px;
+  left: 1000px;
+  right: 150px;
+  top: 171px;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 40px;
+
+}
+@mixin card(){
+  width: 350px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+  transition: 0.3s;
+  margin: 40px 20px;
+
+}
+
+body{
+  @include overlay;
+}
+#wrapper{
+  @include overlay;
+  padding: 0px;
+}
+
+a:link {
+  color: #FFFFFF;
+}
+a:visited {
+  color: #646F79;
+}
+a:hover {
+  color: #646F79;
+ }
+
+ /***************First Block************************/
+
+ .container{
+   @include overlay;
+   position: relative;
+
+ }
+ .navbar{
+	opacity: 1;
+	background: none;
+
+}
+
+.btn-success{
+	margin-right: 5px;
+}
+
+li nav-item{
+  @include overlay;
+  color: $white;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.image{
+	height: 760px;
+}
+
+.icons{
+  color: $black;
+  box-sizing: border-box;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.3125rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
+}
+
+.header-title{
+  @include overlay;
+  color: $white;
+  position: absolute;
+  width: 413px;
+  height: 202px;
+  left: 165px;
+  top: 270px;
+}
+.title-mini{
+  @include overlay;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 270px;
+}
+.title-big{
+  @include overlay;
+  font-size: 60px;
+  margin-left: 270px;
+}
+form{
+  @include form;
+  top: 140px;
+  border-radius: 5px;
+}
+input, .submit{
+  width: 365px;
+  height: 53px;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.form-title{
+  @include overlay;
+  font-size: 30px;
+}
+
+
+#partners{
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  top: 810px;
+  text-align: center;
+}
+
+
+.line{
+    margin-top: 50px;
+}
+
+
+.justify-content-lg-between{
+
+  margin-top: 320px;
+}
+
+.conteiner-2{
+  @include overlay;
+  background-color: $grey;
+  margin-top: 70px;
+  height: 815px;
+  padding-top: 1px;
+
+}
+.carusel{
+ max-width: 700px;
+  margin: 40px auto;
+  margin-bottom: 150px;
+
+}
+.block_btn{
+	background: rgba(121, 110, 255, 0.1);
+border-radius: 99px;
+}
+
+.slide-header{
+	text-align: center;
+  margin-top: 100px;
+}
+
+.block-title{
+  @include overlay;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.block-subtitle{
+	@include overlay;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+
+}
+
+.menu{
+  @include overlay;
+
+}
+
+.slide-header{
+  @include overlay;
+  margin-top: 150px;
+}
+
+.card-1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.card-2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.activ-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+.container-cards{
+  @include overlay;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card-1 {
+  @include card;
+  @include border-radius(4px);
+  padding-top: 50px;
+  margin-top: 50px;
+	height: 420px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+  transition: 0.3s;
+}
+
+.card-2{
+  @include card;
+  @include border-radius(4px);
+  padding-top: 50px;
+  margin-top: 50px;
+	height: 420px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+  transition: 0.3s;
+}
+
+.activ-card{
+  @include card;
+  color: $white;
+	margin: 20px;
+	padding-top: 50px;
+	top: 2797px;
+	height: 490px;
+  background: $green;
+  border: 1px solid $grey;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+
+.card-title{
+
+  font-size: 39px;
+}
+.card-text{
+
+  font-size: 15px;
+}
+
+.comments{
+  @include overlay;
+  margin-top: 100px;
+}
+
+
+
+.conteiner-3{
+position: absolute;
+width: 100%;
+height: 953px;
+left: 0px;
+top: 2000px;
+background: #FFFFFF;
+border-radius: 0px;
+}
+
+.card-header{
+	text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.activ-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+button.cards{
+	margin-top: 30px;
+	width: 284px;
+  height: 44px;
+  left: 198px;
+  top: 3172px;
+  text-align: center;
+  background: $purple;
+  border: 2px solid $grey;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button.activ-cards{
+	margin-top: 30px;
+	width: 284px;
+  height: 44px;
+  left: 578px;
+  top: 3178px;
+  background: $grey;
+  border: 2px solid $grey;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+/***************************COMMENTS******************************/
+
+.conteiner-comments{
+  @include overlay;
+  margin-top: 100px;
+
+
+}
+
+
+
+.fullimg{
+  margin-top: 100px;
+    @include overlay;
+  background-image: url("/assets/footerimg.png");
+    position: relative;
+ width: 100%;
+ height: 300px;
+  opacity: 10px;
+  display: inline-block;
+
+
+}
+.title-pre-footer subtitle-pre-footer{
+ color: $white;
+   @include overlay;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+
+footer{
+  @include overlay;
+  width: 100%;
+
+}
+
+/*****************FOOTER*******************/
+
+.image-footer{
+	height: 252px;
+}
+.conteiner-footer{
+	position: absolute;
+width: 100%;
+height: 348px;
+left: 0px;
+@include overlay;
+background: #151B26;
+border-radius: 0px;
+}
+
+.sss{
+	width: 40px;
+height: 40px;
+margin-left: 165px;
+top: 3500px;
+margin-top: 64px;
+
+}
+
+.btn-outline-light{
+	margin-top: 136px;
+	width: 109px;
+height: 41px;
+margin-left: 165px;
+margin-top: 70px;
+
+border: 1px solid rgba(255, 255, 255, 0.1);
+box-sizing: border-box;
+border-radius: 4px;
+
+}
+.post-footer{
+width: 263px;
+height: 22px;
+margin-left: 165px;
+margin-top: 90px;
+@include overlay;
+font-size: 12px;
+line-height: 22px;
+/* identical to box height, or 181% */
+
+
+color: #8C98A4;
+}
+
+.act-footer{
+	height: 24px;
+
+margin-top: 40px;
+@include overlay;
+font-size: 16px;
+line-height: 24px;
+color: $white;
+}
+
+.footer-item{
+height: 24px;
+@include overlay;
+font-size: 13px;
+line-height: 24px;
+color: rgba(255, 255, 255, 0.7);
+}
